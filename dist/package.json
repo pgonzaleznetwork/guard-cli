@@ -1,0 +1,48 @@
+{
+  "name": "guard-cli",
+  "description": "",
+  "version": "1.0.0",
+  "dependencies": {
+    "@oclif/core": "^4",
+    "@salesforce/core": "^8",
+    "@salesforce/sf-plugins-core": "^12",
+    "@apollo/client": "^3.13.8",
+    "cross-fetch": "^4.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "."
+  ],
+  "keywords": [
+    "force",
+    "salesforce",
+    "salesforcedx",
+    "sf",
+    "sf-plugin",
+    "sfdx",
+    "sfdx-plugin"
+  ],
+  "license": "BSD-3-Clause",
+  "oclif": {
+    "commands": "./commands",
+    "bin": "sf",
+    "topicSeparator": " ",
+    "devPlugins": [
+      "@oclif/plugin-help"
+    ],
+    "topics": {
+      "hello": {
+        "description": "Commands to say hello."
+      }
+    },
+    "flexibleTaxonomy": true
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": "./lib/index.js",
+  "type": "module",
+  "author": "AutoRABIT"
+}

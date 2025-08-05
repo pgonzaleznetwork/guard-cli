@@ -1,0 +1,17 @@
+name: Salesforce Guard CLI
+
+on:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run a multi-line script
+        run: |
+          npm i -g @salesforce/cli
+          echo "y" | sf plugins install abstract-plugin
+          sf guard auth login --apiToken ${{ secrets.API_TOKEN }}
+          sf guard standards review --provider github --providerToken ${{ secrets.CLI_GITHUB_TOKEN }} --repo ${{ github.repository }} --pr ${{ github.event.pull_request.number }}
