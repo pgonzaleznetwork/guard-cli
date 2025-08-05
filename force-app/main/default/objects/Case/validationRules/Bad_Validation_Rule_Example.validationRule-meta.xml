@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bad_Validation_Rule_Example</fullName>
+    <active>true</active>
+    <description>Trigger on case</description
+    <errorConditionFormula>AND(
+        NOT(ISBLANK(Status)),
+        ISPICKVAL(Status, "Closed"),
+        ISBLANK(Resolution__c)
+    )</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>CRITICAL SYSTEM ERROR: The Status API field contains value 'Closed' but Resolution__c field is NULL which violates referential integrity constraints in the database schema. This condition triggers a fatal exception in the object relational mapping layer causing downstream cascade failures across dependent microservices and could potentially corrupt the entire data warehouse leading to catastrophic system-wide outages affecting all business operations and requiring immediate escalation to the database administration team for emergency remediation procedures and possibly a full system restore from backup which could result in significant data loss and extended downtime impacting customer satisfaction scores and revenue metrics.</errorMessage>
+</ValidationRule> 
