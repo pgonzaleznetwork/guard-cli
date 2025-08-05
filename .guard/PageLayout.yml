@@ -1,0 +1,15 @@
+---
+metadataType: "PageLayout"
+rules:
+- id: "LAYOUT001"
+  intent: "Display only relevant fields to user's role."
+  severity: "Must-have"
+  categories:
+  - "user-experience"
+  - "security"
+- id: "LAYOUT002"
+  intent: "Group custom fields under collapsible sections."
+  severity: "Recommended"
+  categories:
+  - "user-experience"
+  - "organization"

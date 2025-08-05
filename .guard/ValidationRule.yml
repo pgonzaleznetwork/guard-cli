@@ -1,0 +1,15 @@
+---
+metadataType: "ValidationRule"
+rules:
+- id: "VAL001"
+  intent: "Use validation rules only when necessary."
+  severity: "Recommended"
+  categories:
+  - "best-practice"
+  - "performance"
+- id: "VAL002"
+  intent: "Error messages must be <255 characters."
+  severity: "Must-have"
+  categories:
+  - "documentation"
+  - "user-experience"

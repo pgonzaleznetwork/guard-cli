@@ -1,0 +1,21 @@
+---
+metadataType: "Flow"
+rules:
+- id: "FLOW001"
+  intent: "Flows must have meaningful names and descriptions."
+  severity: "Must-have"
+  categories:
+  - "naming"
+  - "documentation"
+- id: "FLOW002"
+  intent: "Use Standard Error Handling and User Navigation Subflows."
+  severity: "Must-have"
+  categories:
+  - "best-practice"
+  - "user-experience"
+- id: "FLOW003"
+  intent: "Avoid running flows on every change unless required."
+  severity: "Recommended"
+  categories:
+  - "performance"
+  - "best-practice"

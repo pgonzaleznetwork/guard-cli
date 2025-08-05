@@ -1,0 +1,33 @@
+---
+metadataType: "CustomField"
+rules:
+- id: "FIELD001"
+  intent: "API names must use PascalCase and prefix with department."
+  severity: "Must-have"
+  categories:
+  - "naming"
+  - "consistency"
+- id: "FIELD002"
+  intent: "Description must include department, use case, format."
+  severity: "Must-have"
+  categories:
+  - "documentation"
+  - "clarity"
+- id: "FIELD003"
+  intent: "Avoid Boolean fields unless binary and permanent."
+  severity: "Recommended"
+  categories:
+  - "field-design"
+  - "best-practice"
+- id: "FIELD004"
+  intent: "Use picklists over free-text fields when possible."
+  severity: "Recommended"
+  categories:
+  - "field-design"
+  - "best-practice"
+- id: "FIELD005"
+  intent: "Integration fields must be prefixed with EXT_."
+  severity: "Must-have"
+  categories:
+  - "naming"
+  - "integration"
