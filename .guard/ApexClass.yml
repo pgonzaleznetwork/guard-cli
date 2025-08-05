@@ -1,0 +1,28 @@
+---
+metadataType: "ApexClass"
+rules:
+- id: "APEX001"
+  intent: "Use enterprise trigger framework for all Apex."
+  severity: "Must-have"
+  categories:
+  - "design"
+- id: "APEX002"
+  intent: "Include header comments with Author, Date, Purpose, JIRA."
+  severity: "Must-have"
+  categories:
+  - "documentation"
+- id: "APEX003"
+  intent: "Unit tests must cover at least 95% of code."
+  severity: "Must-have"
+  categories:
+  - "testing"
+- id: "APEX004"
+  intent: "Use central Logger class for logging."
+  severity: "Must-have"
+  categories:
+  - "logging"
+- id: "APEX005"
+  intent: "All exceptions must be caught and rethrown as HandledException."
+  severity: "Must-have"
+  categories:
+  - "error-handling"

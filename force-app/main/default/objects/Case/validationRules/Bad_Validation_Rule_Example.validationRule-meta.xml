@@ -2,7 +2,7 @@
 <ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Bad_Validation_Rule_Example</fullName>
     <active>true</active>
-    <description>Trigger on case</description
+    <description>Trigger on case.</description
     <errorConditionFormula>AND(
         NOT(ISBLANK(Status)),
         ISPICKVAL(Status, "Closed"),
