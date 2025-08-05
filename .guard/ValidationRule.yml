@@ -1,15 +1,28 @@
 ---
 metadataType: "ValidationRule"
 rules:
-- id: "VAL001"
-  intent: "Use validation rules only when necessary."
-  severity: "Recommended"
-  categories:
-  - "best-practice"
-  - "performance"
-- id: "VAL002"
-  intent: "Error messages must be <255 characters."
+- id: "VR001"
+  intent: "Must include a description explaining the rule’s purpose."
   severity: "Must-have"
   categories:
   - "documentation"
+- id: "VR002"
+  intent: "Must be bypassable using a global Custom Setting or CMDT."
+  severity: "Must-have"
+  categories:
+  - "design"
+- id: "VR003"
+  intent: "Formula logic must be commented inline if it exceeds 3 lines."
+  severity: "Must-have"
+  categories:
+  - "documentation"
+- id: "VR004"
+  intent: "Avoid using $Profile.Name for user-specific logic."
+  severity: "Must-have"
+  categories:
+  - "design"
+- id: "VR005"
+  intent: "Validation error messages must be user-friendly."
+  severity: "Must-have"
+  categories:
   - "user-experience"

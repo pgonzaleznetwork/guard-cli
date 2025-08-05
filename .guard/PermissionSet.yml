@@ -1,0 +1,24 @@
+---
+metadataType: "PermissionSet"
+rules:
+- id: "PS001"
+  intent: "Naming convention: PS_<Role/Feature>_<Module>."
+  severity: "Must-have"
+  categories:
+  - "naming"
+- id: "PS002"
+  intent: "Permission Sets must be modular and documented."
+  severity: "Must-have"
+  categories:
+  - "design"
+  - "documentation"
+- id: "PS003"
+  intent: "Do not exceed 100 object permissions per set."
+  severity: "Must-have"
+  categories:
+  - "design"
+- id: "PS004"
+  intent: "Use Permission Set Groups for bundling access levels."
+  severity: "Recommended"
+  categories:
+  - "design"
