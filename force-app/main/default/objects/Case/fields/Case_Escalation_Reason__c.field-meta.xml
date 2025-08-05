@@ -5,6 +5,7 @@
     <label>Case Escalation Reason</label>
     <length>255</length>
     <required>false</required>
+    <description>Why the case was escalated</description>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
