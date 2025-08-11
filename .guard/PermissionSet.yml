@@ -22,3 +22,15 @@ rules:
   severity: "Recommended"
   categories:
   - "design"
+- id: "PS005"
+  intent: "Must include a description that specifies the intended persona (e.g., marketing manager, sales representative, etc.)."
+  severity: "Must-have"
+  categories:
+  - "documentation"
+  - "design"
+- id: "PS006"
+  intent: "Must not contain Modify All Data or View All Data permissions."
+  severity: "Must-have"
+  categories:
+  - "security"
+  - "design"
