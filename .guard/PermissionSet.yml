@@ -23,7 +23,7 @@ rules:
   categories:
   - "design"
 - id: "PS005"
-  intent: "Must include a description that specifies the intended persona (e.g., marketing manager, sales representative, etc.)."
+  intent: "Must include a description that specifies the intended persona (e.g. marketing manager, sales representative, etc.)."
   severity: "Must-have"
   categories:
   - "documentation"
