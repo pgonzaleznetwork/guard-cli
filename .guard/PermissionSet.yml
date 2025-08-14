@@ -1,0 +1,42 @@
+---
+metadataType: "PermissionSet"
+rules:
+- id: "PS001"
+  intent: "Must not contain Modify All Data or View All Data permissions."
+  severity: "Must-have"
+  categories:
+  - "security"
+  - "design"
+- id: "PS002"
+  intent: "Naming convention: PS_<Role/Feature>_<Module>."
+  severity: "Must-have"
+  categories:
+  - "naming"
+- id: "PS003"
+  intent: "Permission Sets must be modular and documented."
+  severity: "Must-have"
+  categories:
+  - "design"
+  - "documentation"
+- id: "PS004"
+  intent: "Do not exceed 100 object permissions per set."
+  severity: "Must-have"
+  categories:
+  - "design"
+- id: "PS005"
+  intent: "Use Permission Set Groups for bundling access levels."
+  severity: "Recommended"
+  categories:
+  - "design"
+- id: "PS006"
+  intent: "Must include a description that specifies the intended persona (e.g. marketing manager, sales representative, etc.)."
+  severity: "Must-have"
+  categories:
+  - "documentation"
+  - "design"
+- id: "PS007"
+  intent: "Must not allow delete access on the Account object."
+  severity: "Must-have"
+  categories:
+  - "security"
+
